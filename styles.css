@@ -1,0 +1,251 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #f0f0f0;
+    padding: 20px;
+}
+
+/* Navbar Styles */
+.navbar {
+    background-color: #333333;
+    overflow: hidden;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.navbar a {
+    float: left;
+    display: block;
+    color: #ffffff;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+.navbar a:hover {
+    background-color: #555555;
+}
+
+.navbar a.active {
+    background-color: #ff4500;
+    color: white;
+}
+
+/* General Form Styles */
+form {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 450px;
+    margin: 50px auto;
+}
+
+label {
+    display: block;
+    margin-bottom: 12px;
+    font-weight: bold;
+    color: #333333;
+}
+
+input[type="text"],
+input[type="date"],
+input[type="time"],
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 24px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+}
+
+input[type="submit"] {
+    background-color: #ff4500;
+    color: #ffffff;
+    padding: 12px 24px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-weight: bold;
+}
+
+input[type="submit"]:hover {
+    background-color: #e03000;
+}
+
+/* Dropdown Styles */
+select {
+    width: 100%;
+    padding: 12px;
+    margin-bottom: 24px;
+    border: 1px solid #cccccc;
+    border-radius: 6px;
+    box-sizing: border-box;
+    background-color: #f9f9f9;
+    color: #555555;
+}
+
+/* Form Field Hover */
+input[type="text"]:hover,
+input[type="date"]:hover,
+input[type="time"]:hover,
+select:hover {
+    border-color: #ff4500;
+    background-color: #e6e6e6;
+}
+
+/* Form Field Focus */
+input[type="text"]:focus,
+input[type="date"]:focus,
+input[type="time"]:focus,
+select:focus {
+    outline: none;
+    border-color: #ff4500;
+    box-shadow: 0 0 8px rgba(255, 69, 0, 0.5);
+    background-color: #ffffff;
+}
+
+
+/* Form Links Styles */
+.form-links {
+    list-style-type: none;
+    padding: 0;
+    margin: 30px 0;
+}
+
+.form-links .step {
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #333333;
+}
+
+.form-links li {
+    margin-bottom: 10px;
+}
+
+.form-links a {
+    text-decoration: none;
+    color: #ff4500;
+    transition: color 0.3s ease;
+}
+
+.form-links a:hover {
+    color: #e03000;
+}
+
+/* Confirmation Message Styles */
+.confirmation-message {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+    padding: 30px;
+    max-width: 450px;
+    margin: 50px auto;
+    text-align: center;
+}
+
+.confirmation-message p {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.confirmation-message .success-message {
+    color: #008000;
+}
+
+.confirmation-message .error-message {
+    color: #ff0000;
+}
+
+.success-message {
+    color: #008000;
+    font-weight: bold;
+    text-align: center;
+    font-size: 20px;
+}
+
+/* Footer Styles */
+#footer {
+    text-align: center;
+    margin-top: 20px;
+    padding: 10px;
+    background-color: #f2f2f2;
+    border-top: 1px solid #ccc;
+}
+
+#footer a {
+    margin-right: 20px;
+    text-decoration: none;
+    color: #333;
+    font-weight: bold;
+    position: relative;
+}
+
+#footer a:hover {
+    color: blue;
+    text-decoration: underline;
+}
+
+#footer a:hover::before {
+    content: "LIHE, Student ID: 123071225";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 4px;
+    white-space: nowrap;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#footer a:hover::after {
+    content: "";
+    position: absolute;
+    top: 100%;
+    left: 50%;
+    transform: translateX(-50%);
+    border: 5px solid transparent;
+    border-top-color: #333;
+    opacity: 0;
+    transition: opacity 0.3s ease;
+}
+
+#footer a:hover:hover::before,
+#footer a:hover:hover::after {
+    opacity: 1;
+}
+
+/* table styles... */
+
+h1 {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+th {
+    background-color: #22262a;
+    color: white;
+}
+
+tr:hover {
+    background-color: #f5f5f5;
+}

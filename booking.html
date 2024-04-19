@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Booking Form</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align:center;">Hamro Bagaicha</h1>
+    <div class="navbar">
+        <a href="index.html">Hamro Bagaicha</a>
+        <a class="active" href="booking.html">Booking Form</a>
+        <a href="customer.html">Customer Form</a>
+        <a href="service.html">Service Form</a>
+        <a href="displaybookings.php">All Bookings</a>
+    </div>
+<form action="submit_booking.php" method="post" id="bookingForm">
+    <!-- For Customer Dropdown -->
+    <label for="customer">Customer:</label>
+    <select name="customer" id="customer"></select><br><br>
+
+    <!-- For Service Dropdown -->
+    <label for="service">Service:</label>
+    <select name="service" id="service"></select><br><br>
+
+    <label for="date">Date:</label>
+    <input type="date" name="date" id="date" required><br><br>
+
+    <label for="time">Time Worked:</label>
+    <input type="time" name="time" id="time" required><br><br>
+
+    <input type="submit" value="Submit">
+</form>
+<div id="footer">
+    <a>Developed by Uzzan</a>
+    <a href="https://github.com/najju1997">Source Code</a>
+</div>
+<script src="fetch.js"></script>
+<script src="validation.js"></script>
+</body>
+</html>

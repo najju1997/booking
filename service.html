@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Service Form</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+    <h1 style="text-align:center;">Hamro Bagaicha</h1>
+    <div class="navbar">
+        <a href="index.html">Hamro Bagaicha</a>
+        <a href="booking.html">Booking Form</a>
+        <a href="customer.html">Customer Form</a>
+        <a class="active" href="service.html">Service Form</a>
+        <a href="displaybookings.php">All Bookings</a>
+    </div>
+    <form action="submit_service.php" method="post" id="serviceForm">
+        <label for="serviceName">Service Name:</label>
+        <input type="text" name="serviceName" id="serviceName"><br><br>
+
+        <label for="price">Price Per Hour:</label>
+        <input type="text" name="price" id="price"><br><br>
+
+        <input type="submit" value="Submit">
+    </form>
+    <div id="footer">
+        <a>Developed by Uzzan</a>
+        <a href="https://github.com/najju1997/to-do-list/settings/actions">Source Code</a>
+    </div>
+    <script src="validation.js"></script>
+</body>
+</html>
